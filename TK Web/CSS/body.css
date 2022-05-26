@@ -1,0 +1,66 @@
+:root{
+    --beforeFooter: 100%;
+    --left-right-wd: 15%;
+}
+
+.container{
+    width: 100vw;
+    background-color: rgba(101, 101, 255, 0.234);
+}
+/*  CSS Dành cho phần thân  */
+.main{
+    margin: 0 auto;
+    width: 100vw;
+    height: 1900px;
+    background: red;
+}
+.section--left{
+    float: left;
+    width: var(--left-right-wd);
+    height: var(--beforeFooter);
+    background-color: yellow;
+}
+.section--mid{
+    float: left;
+    width: calc(100% - ( var(--left-right-wd)*2 ));
+    height: var(--beforeFooter);
+    background-color: blueviolet;
+}
+.mid--slider{
+    height: 100px;
+}
+.mid--products{
+    height: 500px;
+}
+.mid--products > h2{
+    text-align: center;
+    margin: 15px;
+}
+.mid--products .product--container{
+
+}
+
+
+
+
+
+.section--right{
+    float: left;
+    width: var(--left-right-wd);
+    height: var(--beforeFooter);
+    background-color: yellow;
+}
+.section--right::after{
+    clear: both;
+}
+
+
+
+
+
+
+.footer{
+    width: 100vw;
+    height: 30px;
+    background-color: aquamarine;
+}
