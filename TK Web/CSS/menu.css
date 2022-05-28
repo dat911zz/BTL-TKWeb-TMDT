@@ -1,8 +1,8 @@
 /* Header */
 .header {
-    width:100%;
+    width:100vw;
     height:100px;
-    position:fixed;
+    position: relative;
 
 }
 

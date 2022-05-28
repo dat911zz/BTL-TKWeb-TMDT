@@ -9,14 +9,15 @@
         *{
             font-family: Tahoma, Geneva, sans-serif;
         }
-        .alertBackground{
-            background-color: rgba(153, 153, 153, 0.293);
-        }
 
+        .alertModal{
+            display: none;            
+        }
         .alert-box{
             position: absolute;
             top: 50%;
             left: 50%;
+            z-index: 999;
             transform: translate(-50%, -50%);
             width: 550px;
             height: 300px;
@@ -98,14 +99,32 @@
             border-radius: 20px;
             text-align: center;
         }
+        #modalBackground{
+            display: none;
+            position: fixed;
+            z-Index: 1;
+            width: 100vw;
+            height: 100vh;
+            transform: scale3d(1.5, 1.5, 1.5);
+            background-color: #9999;
+        }
+        
+        .show{
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <div class="AlertModal">
+    <button id="btnOpen-js">Show Modal</button>
+    <!-- <button id="btnClose-js">Hide Modal</button> -->
+    <div id="modalBackground">
+        
+    </div>
+    <div class="alertModal">
         <div class="alert-box">
             <div class="top">
                 <div class="top-icon">!</div>    
-                <div class="close">
+                <div class="close" id="btnClose-js">
                     <img src="./Assets/close.svg" alt="">
                 </div>      
             </div>
@@ -114,10 +133,40 @@
                 <div class="alert--content">Tài khoản hoặc mật khẩu đã nhập chưa đúng.<br>Vui lòng thử lại!</div>
                 <div class="alert--btn">Thử Lại</div>
             </div>
+        
         </div>
     </div>
 </body>
 <script>
+    var bd = document.querySelector("body");
+    var errModal = document.querySelector(".alertModal");
+    var openBtn = document.getElementById("btnOpen-js");
+    var closeBtn = document.getElementById("btnClose-js");
+    var modalBackground = document.getElementById("modalBackground");
 
+    openBtn.addEventListener("click", () => {
+        errModal.classList.add("show");
+        modalBackground.style.display = "block";
+    });
+    closeBtn.addEventListener("click", () => {
+        errModal.classList.remove("show");
+        modalBackground.style.display = "none";
+    });
+    function show(){
+        console.log("****");
+        showModal(errModal);
+    }
+
+    function showModal(modal) {
+        modal.classList.add("show");
+        bd.style.backgroundColor = "#9999";
+    }
+    function hideModal(modal) {
+        modal.classList.remove("show");
+        bd.style.backgroundColor = "";
+    }
+
+
+    // document.querySelector("body").style.backgroundColor = "none";
 </script>
 </html>
