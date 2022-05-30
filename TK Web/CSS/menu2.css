@@ -9,3 +9,8 @@
 .navbar-light .navbar-nav .nav-link, .navbar-hover-light:hover .navbar-nav .nav-link, .navbar-fixed-light.fixed-top .navbar-nav .nav-link {
     color: rgba(0,0,0,0.65);
 }
+
+.nav-item > a > img{
+    width: 25px;
+    height: 25px;
+}
