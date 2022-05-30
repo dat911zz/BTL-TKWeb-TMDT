@@ -10,8 +10,23 @@
     color: rgba(0,0,0,0.65);
 }
 
-.nav-item > a > img{
+.nav-item a img{
     width: 25px;
     height: 25px;
     margin: 0 15px;
 }
+
+.navbar-icon-link-badge{
+    position: absolute;
+    top: 5px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #343a40;
+    font-size: 0.6rem;
+    line-height: 20px;
+}
+
