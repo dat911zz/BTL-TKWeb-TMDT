@@ -5,14 +5,14 @@
 
 /*  CSS Dành cho phần thân  */
 .carousel{
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
 }
 .carousel-inner{
-    height: 500px;
+    height: 600px;
 }
 .carousel-item > img{
-    height: 490px;
+    height: 600px;
 }
 /* change transition duration to control the speed of fade effect */
 .carousel-item {
