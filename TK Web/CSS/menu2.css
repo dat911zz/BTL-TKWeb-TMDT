@@ -39,7 +39,11 @@
     color: #343a40;
     opacity: 1;
 }
+.nav-item hr{
+    width: 200px;
+}
 
 .r-0{
     right: 0;
 }
+
