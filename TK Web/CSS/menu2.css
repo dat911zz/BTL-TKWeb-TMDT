@@ -52,10 +52,17 @@
     right: 0;
 }
 
+.icon > img{
+  width: 25px;
+  height: 25px;
+}
+
+
+
  @media (min-width: 768px) {
     .animate {
-      animation-duration: 0.3s;
-      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.5s;
+      -webkit-animation-duration: 0.5s;
       animation-fill-mode: both;
       -webkit-animation-fill-mode: both;
     }
