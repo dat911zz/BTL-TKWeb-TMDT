@@ -5,7 +5,7 @@
 
 /*  CSS Dành cho phần thân  */
 .carousel{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 .carousel-inner{
@@ -14,15 +14,15 @@
 .carousel-item > img{
     height: 600px;
 }
+.carousel-item .carousel-caption{
+    text-shadow:  #000000 1px 2px 4px, #000000 0px 0px 4px ,#000000 0px 0px 6px;
+}
 /* change transition duration to control the speed of fade effect */
 .carousel-item {
     transition: transform 2.6s ease-in-out;
   }
   
-  .carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
-    transition: opacity 0s 2.6s;
-  }
+
 .footer{
     width: 100vw;
     height: 30px;

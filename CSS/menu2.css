@@ -10,6 +10,9 @@
     color: rgba(0,0,0,0.65);
 }
 
+.navbar-brand{
+  padding-left: 25px;
+}
 .nav-item a img{
     width: 25px;
     height: 25px;
@@ -28,6 +31,9 @@
     background: #343a40;
     font-size: 0.6rem;
     line-height: 20px;
+}
+.megamenu{
+  background-color: #7c838aca;
 }
 
 .megamenu-list-item > a{
