@@ -6,14 +6,47 @@
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: #555; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 0 7px; /* Some padding */
+    opacity: 0.8;
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    font-size: 30px;
   }
   
       #myBtn:hover {
       background-color: #555; /* Add a dark-grey background on hover */
       }
+
+
+#messageBtn{
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0084ff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    justify-items: center;
+    animation: keyFrame_shadow_out 5s infinite;
+}
+
+#messageBtn svg{
+  width: 30px;
+  height: 30px;
+}
+
+@keyframes keyFrame_shadow_out {
+  0% {box-shadow: 0 0 20px rgb(0, 234, 255) ;}
+  10% {box-shadow: 0 0 20px rgba(0, 255, 85, 0.933) ;}
+  30% {box-shadow: 0 0 50px rgba(2, 87, 177, 0.7) ;}
+  50% {box-shadow: 0 0 20px rgba(255, 221, 0, 0.727) ;}
+  70% {box-shadow: 0 0 30px rgba(0, 255, 81, 0.933) ;}
+  100% {box-shadow: 0 0 20px rgba(0, 234, 255) ;}
+}

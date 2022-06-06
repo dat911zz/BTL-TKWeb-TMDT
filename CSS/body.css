@@ -3,6 +3,14 @@
     --left-right-wd: 15%;
 }
 
+html{
+  scroll-behavior: smooth !important;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+}
+
+
 /*  CSS Dành cho phần thân  */
 .carousel {
     width: 1248px;
