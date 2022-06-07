@@ -1,103 +1,158 @@
 :root {
-    --beforeFooter: 100%;
-    --left-right-wd: 15%;
+  --beforeFooter: 100%;
+  --left-right-wd: 15%;
 }
 
-html{
+html {
   scroll-behavior: smooth !important;
   -webkit-font-smoothing: antialiased;
-  -ms-text-size-adjust:100%;
-  -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
+body {
+  font: 400 16px/1.55 Tahoma;
+}
 
 /*  CSS Dành cho phần thân  */
 .carousel {
-    width: auto;
-    margin: 0 auto;
+  width: auto;
+  margin: 0 auto;
+}
+.carousel-item {
+  width: auto;
+  height: auto;
 }
 
-.carousel-inner {
-    /* height: 600px; */
+.carousel-item>img {
+  min-width: 1124px;
+  max-height: 560px;
 }
 
-.carousel-item{
-    width: auto;
-    height: 650px;
-}
 
-.carousel-item > img {
-    width: 100%;
-    height: auto;
-}
-
-.carousel-item .carousel-caption {
-    text-shadow: #000000 1px 2px 4px, #000000 0px 0px 4px, #000000 0px 0px 6px;
-}
 
 /* change transition duration to control the speed of fade effect */
+.carousel-item .carousel-caption {
+  text-shadow: #000000 1px 2px 4px, #000000 0px 0px 4px, #000000 0px 0px 6px;
+}
 
 .carousel-fade .carousel-inner .carousel-item {
-    opacity: 0;
-    transition: opacity 800ms cubic-bezier(0.7, 0, 0.3, 1) 0s;
-    -webkit-transition-property: opacity;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    transition-property: opacity;
-  }
-  .carousel-fade .carousel-inner .active {
-    opacity: 1;
-  }
-  .carousel-fade .carousel-inner .active.left,
-  .carousel-fade .carousel-inner .active.right {
-    left: 0;
-    opacity: 0;
-    z-index: 1;
-  }
-  .carousel-fade .carousel-inner .next.left,
-  .carousel-fade .carousel-inner .prev.right {
-    opacity: 1;
-  }
-  .carousel-fade .carousel-control {
-    z-index: 2;
-  }
+  opacity: 0;
+  transition: opacity 800ms cubic-bezier(0.7, 0, 0.3, 1) 0s;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* Carousel for hot product */
+.hot-product {
+  width: 100%;
+  height: 200px;
+}
+
+.hot-product .carousel-item {
+  width: auto;
+  height: 200px;
+}
+
+.hot-product .carousel-item>img {
+  width: 100%;
+  height: auto;
+}
 
 
-  .banner{
-    width: auto;
-    height: 278px;
+.multi-item-carousel .carousel-inner > .item{
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner > .item {
+  transition: 500ms ease-in-out left;
+}
+.multi-item-carousel .carousel-inner .active.left {
+  left: -33%;
+}
+.multi-item-carousel .carousel-inner .active.right {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .next {
+  left: 33%;
+}
+.multi-item-carousel .carousel-inner .prev {
+  left: -33%;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    backface-visibility: visible;
+    transform: none !important;
   }
-  .banner > img{
-    width: 100%;
-    height: auto;
-  }
+}
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+  background-image: none;
+}
 
 
-  .best-product{
-    width: 100vw;
-    height: 40px;
-  }
 
-  .card{
-    
-  }
-  .card img{
-    width: 100%;
-    height: 100%;
-  }
+.banner {
+  width: auto;
+  height: 278px;
+}
 
-.card-group{
+.banner>img {
+  width: 100%;
+  height: auto;
+}
+
+
+.best-product {
+  width: 100vw;
+  height: 40px;
+}
+
+.card {
+
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-group {
   justify-content: space-between;
 }
 
-.card-body .item-header{
+.card-body .item-header {
   color: #444;
   font-weight: 600;
   font-size: .9rem;
   margin: 10px 0;
   text-align: justify;
 }
-.card-body .item-price{
+
+.card-body .item-price {
   font-size: .8rem;
   text-align: center;
 }
@@ -109,7 +164,7 @@ html{
 
 
 .footer {
-    width: 100vw;
-    height: 30px;
-    background-color: aquamarine;
+  width: 100vw;
+  height: 30px;
+  background-color: aquamarine;
 }
