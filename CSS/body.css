@@ -13,7 +13,7 @@ html{
 
 /*  CSS Dành cho phần thân  */
 .carousel {
-    width: 1248px;
+    width: auto;
     margin: 0 auto;
 }
 
@@ -23,12 +23,12 @@ html{
 
 .carousel-item{
     width: auto;
-    height: 700px;
+    height: 650px;
 }
 
 .carousel-item > img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .carousel-item .carousel-caption {
@@ -63,10 +63,44 @@ html{
   }
 
 
+  .banner{
+    width: auto;
+    height: 278px;
+  }
+  .banner > img{
+    width: 100%;
+    height: auto;
+  }
 
 
+  .best-product{
+    width: 100vw;
+    height: 40px;
+  }
 
+  .card{
+    
+  }
+  .card img{
+    width: 100%;
+    height: 100%;
+  }
 
+.card-group{
+  justify-content: space-between;
+}
+
+.card-body .item-header{
+  color: #444;
+  font-weight: 600;
+  font-size: .9rem;
+  margin: 10px 0;
+  text-align: justify;
+}
+.card-body .item-price{
+  font-size: .8rem;
+  text-align: center;
+}
 
 
 
