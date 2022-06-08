@@ -37,3 +37,14 @@ menus.forEach((menu, index) => {
       $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
     }
   });
+
+
+
+// Hot product js 
+  $('#lightSlider').lightSlider({
+    gallery: false,
+    item: 4,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9
+});

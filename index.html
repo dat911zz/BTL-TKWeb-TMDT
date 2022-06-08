@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/menu2.css">
     <link rel="stylesheet" href="CSS/body.css">
+    <link rel='stylesheet' href='CSS/lightslider.css'>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <link rel="shortcut icon" href="Assets/favicon.ico">
 
 </head>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
     </script>
+
 <script>
     $(function () {
         $("#header").load("header.html");
@@ -47,7 +50,7 @@
                         aria-label="Slide 6"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="300000" data-bs-custom-class="beautifier">
+                    <div class="carousel-item active" data-bs-interval="3000" data-bs-custom-class="beautifier">
                         <img src="./Assets/SP/LV.jpg" class="img-thumbnail mx-auto img-fluid" alt="LV">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000" data-bs-custom-class="beautifier">
@@ -90,245 +93,96 @@
         </div>
 
         <!-- Danh sách sản phẩm hot -->
-        <!-- <div class="row position-relative">
-            <div class="col-md-6">
-                <div class="best-products">
-                    <h3 class="">SẢN PHẨM BÁN CHẠY <span class="icon"><img src="./Assets/flame.png" alt=""></span>
-                    </h3>
-                    <div class="container">
-                        <div class="card-group w-100">
-                            <div class="row">
-                                <div class="col col-sm-3">
-                                    <div class="card">
-                                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                            alt="">
-                                        <div class="card-body">
-                                            <div class="item-header">
-                                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                            </div>
-                                            <div class="item-price">
-                                                1.000.000 đ
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col col-sm-3">
-                                    <div class="card">
-                                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                            alt="">
-                                        <div class="card-body">
-                                            <div class="item-header">
-                                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                            </div>
-                                            <div class="item-price">
-                                                1.000.000 đ
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col col-sm-3">
-                                    <div class="card">
-                                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                            alt="">
-                                        <div class="card-body">
-                                            <div class="item-header">
-                                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                            </div>
-                                            <div class="item-price">
-                                                1.000.000 đ
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
+        <div class="hotProducts mt-4">
+            <h4>Sản phẩm đang hot vcl <span><img src="./Assets/flame.png" style="width: 20px; height: 20px;" alt=""></span></h4>
+            <ul id="lightSlider" >
+                <li>
+                    <div class="card">
+                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <div class="item-header">
+                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
+                            </div>
+                            <div class="item-price">
+                                1.000.000 đ
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="row">
-            <div id="carousel-hot-products" class="carousel multi-item-carousel slide col-md-6 col-md-offset-3"
-                data-bs-ride="carousel" style="background-color: #999;">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        1.000.000 đ
-                                    </div>
-                                </div>
+                </li>
+                <li >
+                    <div class="card">
+                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <div class="item-header">
+                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
+                            </div>
+                            <div class="item-price">
+                                4.000.000 đ
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        2.000.000 đ
-                                    </div>
-                                </div>
+                </li>
+                <li >
+                    <div class="card">
+                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <div class="item-header">
+                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
+                            </div>
+                            <div class="item-price">
+                                13.000.000 đ
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        3.000.000 đ
-                                    </div>
-                                </div>
+                </li>
+                <li >
+                    <div class="card">
+                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <div class="item-header">
+                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
+                            </div>
+                            <div class="item-price">
+                                13.000.000 đ
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        4.000.000 đ
-                                    </div>
-                                </div>
+                </li>
+                <li >
+                    <div class="card">
+                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <div class="item-header">
+                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
+                            </div>
+                            <div class="item-price">
+                                3.020.000 đ
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        1.000.000 đ
-                                    </div>
-                                </div>
+                </li>
+                <li >
+                    <div class="card">
+                        <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
+                            alt="">
+                        <div class="card-body">
+                            <div class="item-header">
+                                Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100mlsdasds
+                            </div>
+                            <div class="item-price">
+                                12.000.000 đ
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        1.000.000 đ
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        1.000.000 đ
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        1.000.000 đ
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        1.000.000 đ
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="./Assets/SP/Hàng/nuoc-hoa-dior-sauvage-eau-de-toilette-cho-nam-100ml-6205feca663b8-11022022131434.jpg"
-                                    alt="">
-                                <div class="card-body">
-                                    <div class="item-header">
-                                        Nước Hoa Dior Sauvage Eau De Toilette Cho Nam, 100ml
-                                    </div>
-                                    <div class="item-price">
-                                        1.000.000 đ
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Controls -->
-                    <button class="carousel-control-prev left" type="button" data-bs-target="#carousel-hot-products" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                      </button>
-                      <button class="carousel-control-next right" type="button" data-bs-target="#carousel-hot-products" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                      </button>
-                </div>
-            </div>
-
-        </div>
+                </li>
         
+            </ul>
+        </div>
         <!-- Phần chân trang -->
         <div id="footer"></div>
 
@@ -338,5 +192,5 @@
 
 </body>
 <script src="Script/script.js"></script>
-
+<script src='//sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
 </html>
