@@ -115,7 +115,7 @@ body {
 
 .banner {
   width: auto;
-  height: 278px;
+  height: auto;
 }
 
 .banner>img {
@@ -129,7 +129,10 @@ body {
   height: 40px;
 }
 
-.card {}
+.card {
+  /* width: fit-content;
+  max-height: 550px; */
+}
 
 .card img {
   width: 100%;
@@ -191,6 +194,5 @@ body {
 }
 #lightSlider img {
   display: block;
-  height: 200px;
   max-width: 100%;
 }

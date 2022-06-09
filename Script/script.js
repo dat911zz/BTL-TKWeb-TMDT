@@ -40,11 +40,3 @@ menus.forEach((menu, index) => {
 
 
 
-// Hot product js 
-  $('#lightSlider').lightSlider({
-    gallery: false,
-    item: 4,
-    loop:true,
-    slideMargin: 0,
-    thumbItem: 9
-});

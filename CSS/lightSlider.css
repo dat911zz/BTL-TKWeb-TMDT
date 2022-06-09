@@ -184,7 +184,8 @@
     display: block;
     top: 50%;
     height: 32px;
-    background-image: url('../img/controls.png');
+    background-image: url('/Assets/arrow.png');
+    background-size: cover;
     cursor: pointer;
     position: absolute;
     z-index: 99;
@@ -201,6 +202,11 @@
 .lSAction>.lSPrev {
     background-position: 0 0;
     left: 10px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+     -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+         transform: rotate(180deg);
 }
 
 .lSAction>.lSNext {
