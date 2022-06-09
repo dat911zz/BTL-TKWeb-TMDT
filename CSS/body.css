@@ -14,7 +14,7 @@ body {
   font: 400 16px/1.55 Tahoma;
 }
 
-/*  CSS Dành cho phần thân  */
+/*  Tùy chỉnh CSS cho Carousel  */
 .carousel {
   width: auto;
   margin: 0 auto;
@@ -26,10 +26,33 @@ body {
 }
 
 .carousel-item>img {
-  min-width: 1204px;
-  max-height: 560px;
+  width: 70vw;
+  height: 90vh;
 }
-
+@media screen and (max-width: 2560px) {
+  .carousel-item>img {
+    width: 70vw;
+    max-height: 80vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .carousel-item>img {
+    width: 60vw;
+    max-height: 50vh;
+  }
+}
+@media screen and (max-width: 790px) {
+  .carousel-item>img {
+    width: 50vw;
+    max-height: 40vh;
+  }
+}
+@media screen and (max-width: 570px) {
+  .carousel-item>img {
+    width: 60vw;
+    height: 40vh;
+  }
+}
 
 
 /* change transition duration to control the speed of fade effect */
@@ -67,8 +90,6 @@ body {
 }
 
 /* Carousel for hot product */
-
-
 .hot-product {
   width: 70%;
   min-height: 200px;
@@ -85,37 +106,9 @@ body {
   height: auto;
 }
 
-.multi-item-carousel .carousel-inner .active.left {
-  left: -33%;
-}
-
-.multi-item-carousel .carousel-inner .active.right {
-  left: 33%;
-}
-
-.multi-item-carousel .carousel-inner .next {
-  left: 33%;
-}
-
-.multi-item-carousel .carousel-inner .prev {
-  left: -33%;
-}
-
-@media all and (transform-3d),
-(-webkit-transform-3d) {
-  .multi-item-carousel .carousel-inner>.carousel-item {
-    transition: 500ms ease-in-out all !important;
-    backface-visibility: visible !important;
-  }
-}
-
-.multi-item-carousel .carouse-control.left,
-.multi-item-carousel .carouse-control.right {
-  background-image: none;
-}
 
 
-
+/* Banner dưới Slider 1 */
 .banner {
   width: auto;
   height: auto;
@@ -127,14 +120,14 @@ body {
 }
 
 
+/* Sản phẩm bán chạy */
 .best-product {
   width: 100vw;
   height: 40px;
 }
 
 .card {
-  /* width: fit-content;
-  max-height: 550px; */
+  
 }
 
 .card img {
@@ -153,13 +146,14 @@ body {
   height: 100px;
   overflow: auto;
   margin: 10px 0;
-  text-align: justify;
+  text-align: center;
 }
 
 .card-body .item-price {
   font-size: .8rem;
   text-align: center;
 }
+
 /* width */
 .card-body .item-header::-webkit-scrollbar {
   width: 5px;
@@ -174,6 +168,7 @@ body {
 /* Handle */
 .card-body .item-header::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 50px;
 }
 
 /* Handle on hover */

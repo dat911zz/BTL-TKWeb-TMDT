@@ -13,6 +13,10 @@
 .navbar-brand{
   padding-left: 25px;
 }
+.nav-item a{
+  text-transform: uppercase;
+}
+
 .nav-item a img{
     width: 25px;
     height: 25px;
@@ -41,6 +45,7 @@
     text-decoration: none;
     color: #343a40;
     opacity: 0.8;
+    text-transform: capitalize;
 }
 .megamenu-list-item > a:hover{
     color: #343a40;
