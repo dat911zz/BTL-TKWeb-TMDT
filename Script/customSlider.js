@@ -1,20 +1,14 @@
 
-// Hot product js 
-$('#lightSlider').lightSlider({
-    gallery: false,
-    item: 4,
-    loop: true,
-    slideMargin: 0,
-    thumbItem: 9
-});
-
 $(document).ready(function () {
     $('#responsive').lightSlider({
         item: 4,
+        auto: true,
         loop: true,
         slideMove: 2,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-        speed: 600,
+        speed: 1200,
+        pause: 3000,
+        pauseOnHover: true,
         responsive: [
             {
                 breakpoint: 2560,
