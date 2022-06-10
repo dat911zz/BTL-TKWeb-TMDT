@@ -169,7 +169,7 @@ body {
  
 /* Handle */
 .card-body .item-header::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(0, 115, 255);
   border-radius: 50px;
 }
 
