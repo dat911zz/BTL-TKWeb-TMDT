@@ -184,7 +184,7 @@
     display: block;
     top: 50%;
     height: 32px;
-    background-image: url('../Assets/arrow-1.svg');
+    background-image: url('/Assets/arrow-1.svg');
     background-size: cover;
     cursor: pointer;
     position: absolute;
