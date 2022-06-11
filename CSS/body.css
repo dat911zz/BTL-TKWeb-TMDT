@@ -54,7 +54,9 @@ body {
     height: 40vh;
   }
 } */
-
+.carousel-indicators [data-bs-target]{
+    border: 1px solid #4a4a4a52 !important;
+}
 
 /* change transition duration to control the speed of fade effect */
 .carousel-item .carousel-caption {
