@@ -1,30 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ Hàng</title>
-    <link rel="stylesheet" href="CSS/reset.css">
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/gioHang.css">
+  <title>Giỏ Hàng</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous">
     </script>
-    <script> 
-    $(function(){
-      $("#header").load("header.html"); 
-      $("#footer").load("footer.html"); 
-      $("#backbtn").load("./Utilities/Components.html");
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
     });
-    </script> 
+  </script>
 </head>
+
 <body>
-    <div id="header"></div>
-    <!--Remaining section-->
-    <div id="footer"></div>
-    <!-- Phần nút back to head -->
-    <div id="backbtn"></div>
+  <div id="header"></div>
+  <section class="hero">
+    <div class="container">
+      <!--bredcrumb Vị trí điều Hướng-->
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Giỏ Hàng </li>
+      </ol>
+      <!--hero content-->
+      <div class="hero-content pb-5 text-center">
+        <h1 class="hero-heading">Giỏ Hàng</h1>
+        <divc class="row">
+          <div class="col-xl-8 offset-xl-2">
+            <p class="lea text-muted">Những gì bạn chọn đều nằm trong này</p>
+          </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--Giỏ Hang selection-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <!--Right 8 Phần chia bên tổng các thành phần -->
+        <div class="col-lg-8 bord ">
+          <div class="row">
+            <div class="text-center p-1" id="order-header">
+              <div class="row">
+                <div class="col-md-5">Mục</div>
+                <div class="col-md-7  d-none d-md-block">
+                  <div class="row">
+                    <div class="col-md-3">Giá</div>
+                    <div class="col-md-5">Số Lượng</div>
+                    <div class="col-md-3">Tổng</div>
+                    <div class="col-md-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Trong order-->
+          <div class="cart-body">
+            <div class="block-body pt-1">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="cart-item">
+                        <!--1-->
+                        <div class="row d-flex align-items-center text-center text-start">
+                          <div class="col-12 col-md-5">
+                            <div class="d-flex align-items-center">
+                              <a href="detail.html">
+                                <img class="cart-item-img rounded"
+                                  src="https://i.pinimg.com/564x/e1/9f/a0/e19fa02620b90bb2bcfbbd50c54e9e5c.jpg"
+                                  alt="...">
+                              </a>
+                              <div class="cart-title text-start">
+                                <a class="text-uppercase text-dark " href="detail.html"><b>áo Mèo Con</b> </a><br>
+                                <span class="text-muted text-sm">Size: XL</span> <br>
+                                <span class="text-muted text-sm">Colour: Xanh Lá</span><br>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-7 mt-4 mt-md-0">
+                            <div class="row align-items-center">
+                              <div class="col-md-3">
+                                <div class="row">
+                                  <div class="col-6 d-md-none text-muted text-start">Giá Sản Phẩm: </div>
+                                  <div class="col-6 col-md-12 text-end text-md-center">65.000 đ</div>
+                                </div>
+                              </div>
+                              <div class="col-md-5">
+                                <div class="row align-items-center">
+                                  <div class="d-md-none col-7 col-sm-9 text-muted text-start">Số Lương SP: </div>
+                                  <div class="col-5 col-sm-3 col-md-12">
+                                    <div class="d-flex align-items-center">
+                                      <div class="btn btn-items increase ">-</div>
+                                      <!-- <input class="form-control text-center border-0 border-md input-items" type="text" id="value" value="2"> -->
+                                      <span id="value"
+                                        class="text-box form-control text-center border-0 border-md input-items"
+                                        type="text">0</span>
+
+                                      <div class="btn btn-items decrease">+</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="row">
+                                  <div class="col-6 d-md-none text-muted text-start"> Tổng Giá </div>
+                                  <div class="col-6 col-md-12 text-end text-md-center">260.000 đ</div>
+                                </div>
+                              </div>
+                              <div class="col-md-1 ">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-x-circle text-dark" alt="Xóa Mẫu"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                  </svg></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- Kết Cart-items -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="cart-item">
+                        <!--1-->
+                        <div class="row d-flex align-items-center text-center text-start">
+                          <div class="col-12 col-md-5">
+                            <div class="d-flex align-items-center">
+                              <a href="detail.html">
+                                <img class="cart-item-img rounded"
+                                  src="https://i.pinimg.com/564x/e1/9f/a0/e19fa02620b90bb2bcfbbd50c54e9e5c.jpg"
+                                  alt="...">
+                              </a>
+                              <div class="cart-title text-start">
+                                <a class="text-uppercase text-dark " href="detail.html"><b>áo Mèo Con</b> </a><br>
+                                <span class="text-muted text-sm">Size: XL</span> <br>
+                                <span class="text-muted text-sm">Colour: Xanh Lá</span><br>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-7 mt-4 mt-md-0">
+                            <div class="row align-items-center">
+                              <div class="col-md-3">
+                                <div class="row">
+                                  <div class="col-6 d-md-none text-muted text-start">Giá Sản Phẩm: </div>
+                                  <div class="col-6 col-md-12 text-end text-md-center">65.000 đ</div>
+                                </div>
+                              </div>
+                              <div class="col-md-5">
+                                <div class="row align-items-center">
+                                  <div class="d-md-none col-7 col-sm-9 text-muted text-start">Số Lương SP: </div>
+                                  <div class="col-5 col-sm-3 col-md-12">
+                                    <div class="d-flex align-items-center">
+                                      <div class="btn btn-items increase ">-</div>
+                                      <!-- <input class="form-control text-center border-0 border-md input-items" type="text" id="value" value="2"> -->
+                                      <span id="value"
+                                        class="text-box form-control text-center border-0 border-md input-items"
+                                        type="text">0</span>
+
+                                      <div class="btn btn-items decrease">+</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="row">
+                                  <div class="col-6 d-md-none text-muted text-start"> Tổng Giá </div>
+                                  <div class="col-6 col-md-12 text-end text-md-center">260.000 đ</div>
+                                </div>
+                              </div>
+                              <div class="col-md-1 ">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-x-circle text-dark" alt="Xóa Mẫu"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                  </svg></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- Kết Cart-items -->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="cart-item">
+                        <!--1-->
+                        <div class="row d-flex align-items-center text-center text-start">
+                          <div class="col-12 col-md-5">
+                            <div class="d-flex align-items-center">
+                              <a href="detail.html">
+                                <img class="cart-item-img rounded"
+                                  src="https://i.pinimg.com/564x/e1/9f/a0/e19fa02620b90bb2bcfbbd50c54e9e5c.jpg"
+                                  alt="...">
+                              </a>
+                              <div class="cart-title text-start">
+                                <a class="text-uppercase text-dark " href="detail.html"><b>áo Mèo Con</b> </a><br>
+                                <span class="text-muted text-sm">Size: XL</span> <br>
+                                <span class="text-muted text-sm">Colour: Xanh Lá</span><br>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-7 mt-4 mt-md-0">
+                            <div class="row align-items-center">
+                              <div class="col-md-3">
+                                <div class="row">
+                                  <div class="col-6 d-md-none text-muted text-start">Giá Sản Phẩm: </div>
+                                  <div class="col-6 col-md-12 text-end text-md-center">65.000 đ</div>
+                                </div>
+                              </div>
+                              <div class="col-md-5">
+                                <div class="row align-items-center">
+                                  <div class="d-md-none col-7 col-sm-9 text-muted text-start">Số Lương SP: </div>
+                                  <div class="col-5 col-sm-3 col-md-12">
+                                    <div class="d-flex align-items-center">
+                                      <div class="btn btn-items increase ">-</div>
+                                      <!-- <input class="form-control text-center border-0 border-md input-items" type="text" id="value" value="2"> -->
+                                      <span id="value"
+                                        class="text-box form-control text-center border-0 border-md input-items"
+                                        type="text">0</span>
+
+                                      <div class="btn btn-items decrease">+</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="row">
+                                  <div class="col-6 d-md-none text-muted text-start"> Tổng Giá </div>
+                                  <div class="col-6 col-md-12 text-end text-md-center">260.000 đ</div>
+                                </div>
+                              </div>
+                              <div class="col-md-1 ">
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-x-circle text-dark" alt="Xóa Mẫu"
+                                    viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path
+                                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                  </svg></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div> <!-- Kết Cart-items -->
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-md-1"></div>
+            <a class="col-md-4 btn btn-outline-warning" href="DanhMuc.html">
+              <i class="fa fa-chevron-left"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                  <path
+                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg> Về Nơi Chọn Hàng</i>
+            </a>
+            <div class="col-md-2"></div>
+            <a class="col-md-4 btn btn-outline-info " href="DanhMuc.html">
+              <i class="fa fa-chevron-right"> Thanh Toán <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                  height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                  <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg> </i>
+            </a>
+            <div class="col-md-1"></div>
+            <br>
+          </div>
+        </div>
+
+        <!--Right 4 Phần chia bên tổng giá -->
+        <div class="col-lg-4 bord">
+          <div class="block mb-5">
+            <div class="block-header">
+              <div class="text-uppercase mb-0 text-center" id="order-header">Tổng sản phẩm <br> BIUD</div>
+            </div>
+            <div class="block-body bg-light pt-1">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td class="text-sm" colspan="2"> Những Gì bạn Cần Tôi Đều có! Đây là tổng số tiền mà bạn cần thanh
+                      toán!
+                      Bạn nên xem xét lại các vật phẩm mình mua và Mã giảm giá của bạn</td>
+                  </tr>
+                  <tr>
+                    <td>Tổng Tiền: </td>
+                    <td> 390.000 VND</td>
+                  </tr>
+                  <tr>
+                    <td>Phí Ship:</td>
+                    <td>10.000 VND</td>
+                  </tr>
+                  <tr>
+                    <td>Mã Giảm Giá: </td>
+                    <td>0.000 VND</td>
+                  </tr>
+                  <tr>
+                    <td>Thuế VAT: </td>
+                    <td>0.00 VND</td>
+                  </tr>
+                  <tr>
+                    <td class="table-danger">Tiền Thanh Toán</td>
+                    <td class="table-info">400.000 VND</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Right 4 Phần chia bên tổng giá ĐÓng -->
+    </div>
+  </section>
+
+
+  <div id="footer"></div>
+  <script src="Script/script.js"> </script>
+  <script>
+    let count = 0;
+    const value = document.querySelector("#value");
+    const btns = document.querySelectorAll(".btn");
+    btns.forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+        const styles = e.currentTarget.classList;
+        if (styles.contains("increase")) {
+          if(count > 0)
+          {count--;}
+        } else if (styles.contains("decrease")) {
+          count++;
+        } else {
+          count = 0;
+        }
+        value.textContent = count;
+      });
+    });
+  </script>
 </body>
-<script src="Script/script.js"></script>
-</html>
+
+
+
+
+</html> 
