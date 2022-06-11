@@ -8,6 +8,7 @@ $(document).ready(function () {
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed: 1200,
         pause: 3000,
+        adaptiveHeight: true,
         pauseOnHover: true,
         responsive: [
             {
