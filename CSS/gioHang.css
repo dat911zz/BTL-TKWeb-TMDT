@@ -1,15 +1,5 @@
 
-body{
-    margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.44px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    --webkit-text-size-adjust:100%;
-    --webkit-tap-highlight-color:rgba(0,0,0,0);
-}
+
 
 .breadcrumb{
     font-size: 13px;
@@ -54,29 +44,6 @@ h1.hero-heading{
     margin: 0px 0px 34px;
     display: block;
    
-}
-/*-----*/
-
-/* .cart-header {
-    max-height: 40px;
-    text-transform: uppercase;
-    letter-spacing: 3.2px;
-    font-weight: bold;
-    padding: 3.2px 32px;
-    background: rgb(239, 239, 239);
-    border-radius: 10px;
-    
-} */
-
- .row{
-    --bs-gutter-x: 1.5px;
-    --bs-gutter-y:0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-x) * -1);
-    margin-right: calc(var(--bs-gutter-x) * -2);
-    margin-left: calc(var(--bs-gutter-x) * -2);
-    
 }
 
 /**/
