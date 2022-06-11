@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh mục sản phẩm</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist\css\bootstrap.css">
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous">
     </script>
+
     <script>
       $(function(){
         $("#header").load("header.html"); 
@@ -17,16 +20,360 @@
         $("#backbtn").load("./Utilities/Components.html");
       });
     </script>
+
     <script src="Script/script.js"></script>
-</head>
 
-<body>
+    <style>
+      .img-shop{
+          width:100%;
+          height:300px;
+          border-top-left-radius:5px;
+          border-top-right-radius:5px;
+      }
+
+      .teamshop .card{
+          min-height:570px;
+      }
+
+      .box{
+          width:100%;
+          height:100%;
+          position:absolute;
+          overflow:hidden;
+          top:0;
+      }
+
+      .box:before{
+          content:'';
+          position:absolute;
+          top:0;
+          left:-100%;
+          width:100%;
+          height:100%;
+          background: rgba(255,255,255,0.1);
+          transition:0.5s;
+          pointer-events: none;
+      }
+
+      .box:hover:before{
+          left:-50%;
+          transform: skewX(-5deg);
+      }
+
+      .shop-price{
+          color:white;
+          background-color:red;
+          border-radius:5px;
+          padding:5px;
+          text-align:center;
+          -webkit-user-select: none;
+          margin-right:30px;
+      }
+
+      .shop-sale{
+          color:white;
+          background-color:orange;
+          border-left:2px dashed white;
+          border-right:2px dashed white;
+          padding:5px;
+          text-align:center;
+          -webkit-user-select: none;
+      }
+
+      .teamshop .card-body{
+          display:flex;
+          flex-direction:column;
+          justify-content:space-between;
+      }
+
+      .shop-money{
+          display:flex;
+      }
+  </style>
+  </head>
+
+  <body>
     <div id="header"></div>
-    <!--Remaining section-->
 
+    <!-- Remaining section -->
+    <div class="container teamshop" style="margin-top:65px; margin-bottom:30px;">
+      <div class="row">
+          <div class="col-md-3 col-sm-6 col-xm-12">
+              <div class="card">
+                  <div class="card-img-top">
+                      <div style="position:relative;">
+                          <img src="Assets/quanao1.jpg" class="img-shop" alt="Đang tải">
+                          <div class="box"></div>
+                      </div>
+                  </div>
+                  
+                  <div class="card-body">
+                      <h4 class="card-title">Áo khoác RIDE</h4>
+                      <p class="card-text">Áo khoác mùa đông, áo khoác dày, mua áo khoác cặp, chất liệu vải tốt, bền bỉ, không phai màu.</p>
+                      <div class="shop-money">
+                          <p class="shop-price">278.000 VNĐ</p><p class="shop-sale">8.000 VNĐ</p>
+                      </div>
+                  </div>
+                  <div class="card-footer">
+                      <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6  col-xm-12">
+              <div class="card">
+                  <div class="card-img-top">
+                      <div style="position:relative;">
+                          <img src="Assets/quanao2.jpg" class="img-shop" alt="Đang tải">
+                          <div class="box"></div>
+                      </div>
+                  </div>
+                  
+                  <div class="card-body">
+                      <h4 class="card-title">Thời trang hàng hiệu</h4>
+                      <p class="card-text">Bộ thời trang hàng hiệu áo len, túi xách, guốc, bóp tay, túi đeo vai. Thời trang hàng hiệu dành cho phái nữ.</p>
+                      <div class="shop-money">
+                          <p class="shop-price">1.070.000 VNĐ</p><p class="shop-sale">98.000 VNĐ</p>
+                      </div>
+                  </div>
+                  <div class="card-footer">
+                      <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xm-12">
+              <div class="card">
+                  <div class="card-img-top">
+                      <div style="position:relative;">
+                          <img src="Assets/quanao3.jpg" class="img-shop" alt="Đang tải">
+                          <div class="box"></div>
+                      </div>
+                  </div>
+                  
+                  <div class="card-body">
+                      <h4 class="card-title">Áo len mỏng</h4>
+                      <p class="card-text">Áo len mỏng, co giãn, thoáng mát, gợi dáng phái nữ. Chất lượng vải tốt, không bay màu.</p>
+                      <div class="shop-money">
+                          <p class="shop-price">152.000 VNĐ</p><p class="shop-sale">11.300 VNĐ</p>
+                      </div>
+                  </div>
+                  <div class="card-footer">
+                      <a href="#" class="btn btn-outline-danger">Hết hàng</a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xm-12">
+              <div class="card">
+                  <div class="card-img-top">
+                      <div style="position:relative;">
+                          <img src="Assets/quanao4.jpg" class="img-shop" alt="Đang tải">
+                          <div class="box"></div>
+                      </div>
+                  </div>
+                  
+                  <div class="card-body">
+                      <h4 class="card-title">Áo khoác nam</h4>
+                      <p class="card-text">Áo khoác nam màu trắng, áo khoác mùa đông, thu hút phái nữ, áo khoác ưa nhìn, nam tính.</p>
+                      <div class="shop-money">
+                          <p class="shop-price">386.000 VNĐ</p><p class="shop-sale">22.400 VNĐ</p>
+                      </div>
+                  </div>
+                  <div class="card-footer">
+                      <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container teamshop" style="margin-top:30px; margin-bottom:30px;">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xm-12">
+            <div class="card">
+                <div class="card-img-top">
+                    <div style="position:relative;">
+                        <img src="Assets/sonmoi1.jpg" class="img-shop" alt="Đang tải">
+                        <div class="box"></div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <h4 class="card-title">Son môi HERORANGE</h4>
+                    <p class="card-text">Son môi nhãn hiệu HERORANGE. Son môi dành cho GENZ, bền bỉ, không phai màu, thu hút cánh đàn ông.</p>
+                    <div class="shop-money">
+                        <p class="shop-price">338.000 VNĐ</p><p class="shop-sale">20.730 VNĐ</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xm-12">
+            <div class="card">
+                <div class="card-img-top">
+                    <div style="position:relative;">
+                        <img src="Assets/sonmoi2.jpg" class="img-shop" alt="Đang tải">
+                        <div class="box"></div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <h4 class="card-title">Son môi BLACK ROUGE</h4>
+                    <p class="card-text">Son môi vị Socola, xuất xứ từ Hàn Cuốc, thể hiện cá tính, mạnh mẽ của phái nữ.</p>
+                    <div class="shop-money">
+                        <p class="shop-price">827.000 VNĐ</p><p class="shop-sale">15.500 VNĐ</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-3 col-sm-6 col-xm-12">
+            <div class="card">
+                <div class="card-img-top">
+                    <div style="position:relative;">
+                        <img src="Assets/sonmoi3.jpg" class="img-shop" alt="Đang tải">
+                        <div class="box"></div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <h4 class="card-title">Son môi pha chế</h4>
+                    <p class="card-text">Son môi đặc biệt tự pha màu son, có thể bôi đi nếu dính vào quần áo.</p>
+                    <div class="shop-money">
+                        <p class="shop-price">588.000 VNĐ</p><p class="shop-sale">32.400 VNĐ</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xm-12">
+            <div class="card">
+                <div class="card-img-top">
+                    <div style="position:relative;">
+                        <img src="Assets/sonmoi4.jpg" class="img-shop" alt="Đang tải">
+                        <div class="box"></div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <h4 class="card-title">Son môi BLACK ROUGE</h4>
+                    <p class="card-text">Son môi của nữ hoàng, nhấn mạnh cá tính phái nữ. Thu hút các hoàng tử của nàng.</p>
+                    <div class="shop-money">
+                        <p class="shop-price">416.000 VNĐ</p><p class="shop-sale">12.500 VNĐ</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-outline-danger">Hết hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container teamshop" style="margin-top:30px; margin-bottom:30px;">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xm-12">
+          <div class="card">
+              <div class="card-img-top">
+                  <div style="position:relative;">
+                      <img src="Assets/nuochoa1.jpg" class="img-shop" alt="Đang tải">
+                      <div class="box"></div>
+                  </div>
+              </div>
+              
+              <div class="card-body">
+                  <h4 class="card-title">Nước hoa CHANEL</h4>
+                  <p class="card-text">Nước hoa màu vàng óng lấp lánh, tỏa hương thơm ngời ngạt dù cách xa vài kilomet.</p>
+                  <div class="shop-money">
+                      <p class="shop-price">582.000 VNĐ</p><p class="shop-sale">17.640 VNĐ</p>
+                  </div>
+              </div>
+              <div class="card-footer">
+                  <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xm-12">
+          <div class="card">
+              <div class="card-img-top">
+                  <div style="position:relative;">
+                      <img src="Assets/nuochoa2.jpg" class="img-shop" alt="Đang tải">
+                      <div class="box"></div>
+                  </div>
+              </div>
+              
+              <div class="card-body">
+                  <h4 class="card-title">Nước hoa VERSACE</h4>
+                  <p class="card-text">Nước hoa dành cho những cánh hồng quyến rũ, toát lên vẻ kiêu sa của nàng.</p>
+                  <div class="shop-money">
+                      <p class="shop-price">915.000 VNĐ</p><p class="shop-sale">66.500 VNĐ</p>
+                  </div>
+              </div>
+              <div class="card-footer">
+                  <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="col-md-3 col-sm-6 col-xm-12">
+          <div class="card">
+              <div class="card-img-top">
+                  <div style="position:relative;">
+                      <img src="Assets/nuochoa3.jpg" class="img-shop" alt="Đang tải">
+                      <div class="box"></div>
+                  </div>
+              </div>
+              
+              <div class="card-body">
+                  <h4 class="card-title">Nước hoa VERSACE</h4>
+                  <p class="card-text">Nước hoa dành cho phái mạnh, toát lên vẻ nam tính, thu hút các nàng vây quanh.</p>
+                  <div class="shop-money">
+                      <p class="shop-price">666.000 VNĐ</p><p class="shop-sale">51.200 VNĐ</p>
+                  </div>
+              </div>
+              <div class="card-footer">
+                  <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 col-xm-12">
+          <div class="card">
+              <div class="card-img-top">
+                  <div style="position:relative;">
+                      <img src="Assets/nuochoa4.jpg" class="img-shop" alt="Đang tải">
+                      <div class="box"></div>
+                  </div>
+              </div>
+              
+              <div class="card-body">
+                  <h4 class="card-title">Nước hoa L'INTERDIT</h4>
+                  <p class="card-text">Nước hoa hiệu hoàng gia, dành cho quý tộc sở hữu, tỏa ra hương thơm của quý tộc.</p>
+                  <div class="shop-money">
+                      <p class="shop-price">2.077.000 VNĐ</p><p class="shop-sale">98.900 VNĐ</p>
+                  </div>
+              </div>
+              <div class="card-footer">
+                  <a href="#" class="btn btn-outline-secondary">Mua hàng</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
     <div id="footer"></div>
     <!-- Phần nút back to head -->
     <div id="backbtn"></div>
-</body>
+  </body>
 </html>
