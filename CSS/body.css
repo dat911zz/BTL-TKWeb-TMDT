@@ -108,7 +108,13 @@ body {
   width: 100%;
   height: auto;
 }
+.hot-product-header{
 
+}
+.hot-product-header > h6{
+  align-self: center;
+  margin-left: 10px;
+}
 
 
 /* Banner dưới Slider 1 */
