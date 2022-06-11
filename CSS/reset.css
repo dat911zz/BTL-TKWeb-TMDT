@@ -5,3 +5,15 @@
     border: none;
     font-family: Tahoma, sans-serif;
 }
+
+:root {
+    --beforeFooter: 100%;
+    --left-right-wd: 15%;
+  }
+  
+  html {
+    scroll-behavior: smooth !important;
+    -webkit-font-smoothing: antialiased;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
