@@ -20,7 +20,7 @@
 
 <body>
   <div style="height: 56px;"></div>
-  
+
   <div id="header"></div>
   <section class="hero">
     <div class="container">
@@ -98,13 +98,8 @@
                                   <div class="d-md-none col-7 col-sm-9 text-muted text-start">Số Lương SP: </div>
                                   <div class="col-5 col-sm-3 col-md-12">
                                     <div class="d-flex align-items-center">
-                                      <div class="btn btn-items increase ">-</div>
-                                      <!-- <input class="form-control text-center border-0 border-md input-items" type="text" id="value" value="2"> -->
-                                      <span id="value"
-                                        class="text-box form-control text-center border-0 border-md input-items"
-                                        type="text">0</span>
-
-                                      <div class="btn btn-items decrease">+</div>
+                                      <input class="form-control text-center border-0 border-md input-items"
+                                        type="number" id="value" value="2">
                                     </div>
                                   </div>
                                 </div>
@@ -162,13 +157,8 @@
                                   <div class="d-md-none col-7 col-sm-9 text-muted text-start">Số Lương SP: </div>
                                   <div class="col-5 col-sm-3 col-md-12">
                                     <div class="d-flex align-items-center">
-                                      <div class="btn btn-items increase ">-</div>
-                                      <!-- <input class="form-control text-center border-0 border-md input-items" type="text" id="value" value="2"> -->
-                                      <span id="value"
-                                        class="text-box form-control text-center border-0 border-md input-items"
-                                        type="text">0</span>
-
-                                      <div class="btn btn-items decrease">+</div>
+                                      <input class="form-control text-center border-0 border-md input-items"
+                                        type="number" id="value" value="2">
                                     </div>
                                   </div>
                                 </div>
@@ -226,13 +216,8 @@
                                   <div class="d-md-none col-7 col-sm-9 text-muted text-start">Số Lương SP: </div>
                                   <div class="col-5 col-sm-3 col-md-12">
                                     <div class="d-flex align-items-center">
-                                      <div class="btn btn-items increase ">-</div>
-                                      <!-- <input class="form-control text-center border-0 border-md input-items" type="text" id="value" value="2"> -->
-                                      <span id="value"
-                                        class="text-box form-control text-center border-0 border-md input-items"
-                                        type="text">0</span>
-
-                                      <div class="btn btn-items decrease">+</div>
+                                      <input class="form-control text-center border-0 border-md input-items"
+                                        type="number" id="value" value="2">
                                     </div>
                                   </div>
                                 </div>
@@ -258,11 +243,9 @@
                       </div> <!-- Kết Cart-items -->
                     </td>
                   </tr>
-
                 </tbody>
               </table>
             </div>
-
           </div>
           <div class="row">
             <div class="col-md-1"></div>
@@ -275,14 +258,13 @@
             </a>
             <div class="col-md-2"></div>
             <a class="col-md-4 btn btn-outline-info " href="DanhMuc.html">
-              <i class="fa fa-chevron-right"> Thanh Toán <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                  height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+              <i class="fa fa-chevron-right"> Thanh Toán <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                   <path
                     d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
                 </svg> </i>
             </a>
             <div class="col-md-1"></div>
-            <br>
           </div>
         </div>
 
@@ -333,28 +315,7 @@
 
   <div id="footer"></div>
   <script src="Script/script.js"> </script>
-  <script>
-    let count = 0;
-    const value = document.querySelector("#value");
-    const btns = document.querySelectorAll(".btn");
-    btns.forEach(function (btn) {
-      btn.addEventListener("click", function (e) {
-        const styles = e.currentTarget.classList;
-        if (styles.contains("increase")) {
-          if(count > 0)
-          {count--;}
-        } else if (styles.contains("decrease")) {
-          count++;
-        } else {
-          count = 0;
-        }
-        value.textContent = count;
-      });
-    });
-  </script>
+
 </body>
 
-
-
-
-</html> 
+</html>
