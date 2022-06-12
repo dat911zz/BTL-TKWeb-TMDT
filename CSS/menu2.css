@@ -68,7 +68,9 @@
   width: 25px;
   height: 25px;
 }
-
+.input-group>input, .input-group-append>button{
+  border-radius: 0% !important;
+}
 
 
  @media (min-width: 768px) {
