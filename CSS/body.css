@@ -92,30 +92,6 @@ body {
   z-index: 2;
 }
 
-/* Carousel for hot product */
-.hot-product {
-  width: 70%;
-  min-height: 200px;
-  margin: 0 auto;
-}
-
-.hot-product .carousel-item {
-  width: auto;
-  height: 200px;
-}
-
-.hot-product .carousel-item>img {
-  width: 100%;
-  height: auto;
-}
-.hot-product-header{
-
-}
-.hot-product-header > h6{
-  align-self: center;
-  margin-left: 10px;
-}
-
 
 /* Banner dưới Slider 1 */
 .banner {
@@ -130,9 +106,35 @@ body {
 
 
 /* Sản phẩm bán chạy */
-.best-product {
-  width: 100vw;
-  height: 40px;
+.hot-product {
+  width: 70%;
+  min-height: 250px;
+  margin: 0 auto;
+}
+
+.hot-product img {
+  width: auto;
+  height: 200px;
+}
+
+.hot-product .carousel-item>img {
+  width: 100%;
+  height: auto;
+}
+
+.hot-product-header > h4{
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hot-product-header > h6{
+  align-self: center;
+  margin-left: 10px;
+}
+.hot-product-header > h6 > span{
+  background-color: #000000;
+  padding: 5px;
+  color: #fff;
 }
 
 .card {
@@ -143,6 +145,7 @@ body {
 .card img {
   width: 100%;
   height: 100%;
+
 }
 
 .card-group {
