@@ -207,7 +207,11 @@
 	text-decoration: line-through;
 	display: flex;
 }
+.breadcrumb a{
+    color: #212529;
+    text-decoration: none;
 
+}
 
 
 
