@@ -257,11 +257,11 @@ body {
   font-size: 50px;
   color: rgb(251, 91, 118);
   border-radius: 50%;
-  opacity: 0.5;
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+  opacity: 0.4;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
 }
 .btn:hover{
   border: none;
