@@ -44,15 +44,14 @@ h1.hero-heading{
 /*----------*/
 /* Border order*/
 #order-header{
+    margin: 0 auto;
     text-transform: uppercase;
-    letter-spacing: 3.2px;
     font-weight: bold;
     background: rgb(239, 239, 239);
     border-radius: 10px;
-    height: 50px;
-}
-.order-item{
-    padding: 30px;
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 .cart-title{
     padding-left: 20px;
