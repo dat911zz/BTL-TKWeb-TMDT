@@ -30,6 +30,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 /* @media screen and (max-width: 2560px) {
   .carousel-item>img {
     width: 70vw;
@@ -54,8 +55,8 @@ body {
     height: 40vh;
   }
 } */
-.carousel-indicators [data-bs-target]{
-    border: 1px solid #4a4a4a52 !important;
+.carousel-indicators [data-bs-target] {
+  border: 1px solid #4a4a4a52 !important;
 }
 
 /* change transition duration to control the speed of fade effect */
@@ -122,16 +123,18 @@ body {
   height: auto;
 }
 
-.hot-product-header > h4{
+.hot-product-header>h4 {
   color: red;
   font-weight: bold;
   text-transform: uppercase;
 }
-.hot-product-header > h6{
+
+.hot-product-header>h6 {
   align-self: center;
   margin-left: 10px;
 }
-.hot-product-header > h6 > span{
+
+.hot-product-header>h6>span {
   background-color: #000000;
   padding: 5px;
   color: #fff;
@@ -139,7 +142,7 @@ body {
 
 .card {
   align-content: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .card img {
@@ -175,9 +178,9 @@ body {
 
 /* Track */
 .card-body .item-header::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
 }
- 
+
 /* Handle */
 .card-body .item-header::-webkit-scrollbar-thumb {
   background: rgb(0, 115, 255);
@@ -186,7 +189,7 @@ body {
 
 /* Handle on hover */
 .card-body .item-header::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 
@@ -205,21 +208,63 @@ body {
 #lightSlider ul {
   list-style: none outside none;
   padding-left: 0;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
+
 #lightSlider li {
   display: block;
   float: left;
   margin-right: 6px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-#lightSlider .card{
+#lightSlider .card {
   width: auto;
   height: 100%;
   margin: 0 10px;
 }
+
 #lightSlider img {
   display: block;
   max-width: 100%;
+}
+
+
+.item-buy {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #5f5d5d41;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.card .card-body:hover .item-buy {
+  visibility: visible;
+  opacity: 1; 
+}
+.item-buy a {
+  align-self: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(251, 91, 118);
+  border-radius: 50%;
+  opacity: 0.5;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.btn:hover{
+  border: none;
+  color: rgb(251, 91, 118) !important;
+  opacity: 1;
 }

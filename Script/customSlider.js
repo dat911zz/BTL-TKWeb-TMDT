@@ -7,7 +7,7 @@ $(document).ready(function () {
         slideMove: 2,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed: 1200,
-        pause: 3000,
+        pause: 5000000,
         adaptiveHeight: true,
         pauseOnHover: true,
         responsive: [
