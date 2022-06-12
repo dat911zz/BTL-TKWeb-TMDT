@@ -270,7 +270,7 @@ body {
 }
 
 .img-fix{
-  background-image: url("../Assets/81df3f704ba55281ead0042466b293fa.jpg");
+  background-image: url("./81df3f704ba55281ead0042466b293fa.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
