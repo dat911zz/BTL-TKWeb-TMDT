@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Xác Thực Tài Khoản</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="CSS/Login.css">
+<html lang="en">
 
+<head>
+	<meta charset="UTF-8">
+	<title>Xác Thực Tài Khoản</title>
+	<link rel="stylesheet" href="CSS/reset.css">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+	<link rel="stylesheet" href="CSS/Login.css">
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Tạo tài khoản</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>hoặc sử dụng Email để đăng ký</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Đăng Ký</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Đăng nhập</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>hoặc sử dụng tài khoản</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Quên mật khẩu?</a>
-			<button>Đăng Nhập</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Chào mừng trở lại!</h1>
-				<p>Để kết nối tới tài nguyên của chúng tôi, hãy đăng nhập vào tài khoản của bạn </p>
-				
-				<button class="ghost" id="signIn">Đăng Nhập</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Xin chào người dùng mới</h1>
-				<p>Hãy nhập thông tin cá nhân để đăng ký tài khoản mới</p>
-				<button class="ghost" id="signUp">Đăng Ký</button>
+	<!-- partial:index.partial.html -->
+	<div class="container" id="container">
+		<div class="form-container sign-up-container">
+			<form class="RegisterForm" name="Register" action="#">
+				<h1>Tạo tài khoản</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>hoặc sử dụng Email để đăng ký</span>
+				<input id="r-i-name" type="text" placeholder="Name" />
+				<input id="r-i-email" type="email" placeholder="Email" />
+				<span class="err" id="r-errEmail">Vui lòng kiểm tra Email!</span>
+				<input id="r-i-pass" type="password" placeholder="Password" />
+				<span class="err" id="r-errPass">Mật khẩu phải lớn hơn 10 ký tự!</span>
+				<input type="submit" class="button" id="r-b" value="Đăng Ký">
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form class="LoginForm" name="Login" action="#" method="get">
+				<h1>Đăng nhập</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>hoặc sử dụng tài khoản</span>
+				<input id="l-i-email" type="email" placeholder="Email" />
+				<input id="l-i-pass" type="password" placeholder="Password" />
+				<a href="#">Quên mật khẩu?</a>
+				<input type="submit" class="button" id="l-b" value="Đăng Nhập">
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Chào mừng trở lại!</h1>
+					<p>Để kết nối tới tài nguyên của chúng tôi, hãy đăng nhập vào tài khoản của bạn </p>
+
+					<button class="ghost button" id="signIn">Đăng Nhập</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Xin chào người dùng mới</h1>
+					<p>Hãy nhập thông tin cá nhân để đăng ký tài khoản mới</p>
+					<button class="ghost button" id="signUp">Đăng Ký</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<!-- partial -->
-  <script  src="Script/Login.js"></script>
-
+	<!-- partial -->
+	<script src="Script/Login.js"></script>
 </body>
+
 </html>
