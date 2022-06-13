@@ -207,10 +207,20 @@
 	text-decoration: line-through;
 	display: flex;
 }
+.breadcrumb a{
+    color: #212529;
+    text-decoration: none;
 
+}
 
+.product-content-right-product-icon-item p{
+	padding-top: 10px;
+}
 
-
+p {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+}
 
 
 

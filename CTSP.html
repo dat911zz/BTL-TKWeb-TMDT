@@ -1,48 +1,53 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+		integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+		integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+		crossorigin="anonymous"></script>
 </head>
 <link rel="stylesheet" type="text/css" href="CSS/cssTTSP.css">
 <link rel="stylesheet" href="CSS/reset.css">
-<script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
-    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous">
+	</script>
 
-    <script>
-      $(function(){
-        $("#header").load("header.html"); 
-        $("#footer").load("footer.html"); 
-        $("#backbtn").load("./Utilities/Components.html");
-      });
-    </script>
+<script>
+	$(function () {
+		$("#header").load("header.html");
+		$("#footer").load("footer.html");
+		$("#backbtn").load("./Utilities/Components.html");
+	});
+</script>
+
 <body>
 	<div id="header"></div>
-	<!--Remaining section--> 
+	<!--Remaining section-->
 
-	
+
 	<section class="product">
 		<div class="container">
-			<div class="product-top row">
-				<div class="col-md-1"><p>Trang Chủ</p></div>
-				<div class="col-md-1"><span>&#10230;</span></div>
-				<div class="col-md-1"><p>Quần Áo</p></div>
-				<div class="col-md-1"><span>&#10230;</span></div>
-				<div class="col-md-1"><p>Hàng Hot</p></div>
-				<div class="col-md-1"><span>&#10230;</span></div>
-				<div class="col-md-1"><p>Sản Phẩm</p></div>
-			</div>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
+					<li class="breadcrumb-item"><a href="#">DANH MỤC SẢN PHẨM</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Áo khoác RIDE</li>
+				</ol>
+			</nav>
 			<div class="product-content row">
-				<div class="product-content-left row" >
+				<div class="product-content-left row">
 					<div class="product-content-left-big-img">
-						<img src="./Assets/img.2.jpg"></div>
+						<img src="./Assets/img.2.jpg">
+					</div>
 					<div class="product-content-left-small-img">
 						<img src="./Assets/img.2.1.jpg" alt="">
 						<img src="./Assets/img.2.2.jpg" alt="">
@@ -67,11 +72,11 @@
 					<div class="product-content-right-product-size">
 						<p style="font-weight: bold">Size:</p>
 						<div class="size">
-							<span>S</span>
-							<span>M</span>
-							<span>L</span>
-							<span>XL</span>
-							<span>XXL</span>
+							<button type="button" class="btn btn-outline-dark">S</button>
+							<button type="button" class="btn btn-outline-dark">M</button>
+							<button type="button" class="btn btn-outline-dark">L</button>
+							<button type="button" class="btn btn-outline-dark">XL</button>
+							<button type="button" class="btn btn-outline-dark">XXL</button>
 						</div>
 					</div>
 					<div class="quantity">
@@ -83,17 +88,22 @@
 						<button><i class="fas fa-solid fa-cart-shopping"></i>
 							<p>Mua Hàng</p>
 						</button>
-						<button><p>Tìm tại của hàng</p></button>
+						<button>
+							<p>Tìm tại của hàng</p>
+						</button>
 					</div>
 					<div class="product-content-right-product-icon">
 						<div class="product-content-right-product-icon-item">
-							<i class="fa-light fa-phone"></i><p>Hotline</p>
+							<i class="fa fa-phone"></i>
+							<p>Hotline</p>
 						</div>
 						<div class="product-content-right-product-icon-item">
-							<i class="fa-brands fa-rocketchat"></i><p>Chat</p>
+							<i class="fa-brands fa-rocketchat"></i>
+							<p>Chat</p>
 						</div>
 						<div class="product-content-right-product-icon-item">
-							<i class="fa-light fa-envelope"></i><p>Mail</p>
+							<i class="fa fa-envelope"></i>
+							<p>Mail</p>
 						</div>
 					</div>
 					<div class="product-content-right-bottom">
@@ -110,7 +120,7 @@
 								</div>
 								<div class="product-content-right-bottom-content-title-item col-md-2">
 									<p>Tham Khảo</p>
-								</div> 
+								</div>
 							</div>
 							<div class="product-content-right-bottom-content">
 								<div class="product-content-right-bottom-content-chitiet">
@@ -120,7 +130,11 @@
 									-Gửi Từ: Ý.
 								</div>
 								<div class="product-content-right-bottom-content-mota">
-									Lấy cảm hứng từ thời trang thập niên 90, thời kì hoàng kim của thời trang sportwear, áo khoác Gucci Technical Jersey Jacket có thiết kế như một chiếc áo khoác thể thao với phần cổ cao, hai dải băng trắng – xanh lam chạy dọc hai bên cánh tay, nổi bật tên thương hiệu màu đỏ. Phần cổ tay bo chun trang trí bằng sọc xanh – đỏ đặc trưng của hãng
+									Lấy cảm hứng từ thời trang thập niên 90, thời kì hoàng kim của thời trang sportwear,
+									áo khoác Gucci Technical Jersey Jacket có thiết kế như một chiếc áo khoác thể thao
+									với phần cổ cao, hai dải băng trắng – xanh lam chạy dọc hai bên cánh tay, nổi bật
+									tên thương hiệu màu đỏ. Phần cổ tay bo chun trang trí bằng sọc xanh – đỏ đặc trưng
+									của hãng
 								</div>
 							</div>
 						</div>
@@ -153,7 +167,7 @@
 				<img src="./Assets/img.pr.4.jpg" alt="">
 				<h1>Blue Jacquard GG Lounge Jacket</h1>
 				<p>1.980<sub>USD</sub></p>
-				
+
 			</div>
 			<div class="product-related-item col-md-2">
 				<img src="./Assets/img.pr.5.jpg" alt="">
@@ -166,36 +180,37 @@
 	<div id="footer"></div>
 	<!-- Phần nút back to head -->
 	<div id="backbtn"></div>
-<script>
-	const bigImg = document.querySelector(".product-content-left-big-img img")
-	const smallImg = document.querySelectorAll(".product-content-left-small-img img")
-	smallImg.forEach(function(imgItem,X){
-		imgItem.addEventListener("click", function(){
-			bigImg.src = imgItem.src
+	<script>
+		const bigImg = document.querySelector(".product-content-left-big-img img")
+		const smallImg = document.querySelectorAll(".product-content-left-small-img img")
+		smallImg.forEach(function (imgItem, X) {
+			imgItem.addEventListener("click", function () {
+				bigImg.src = imgItem.src
+			})
 		})
-	})
-	
-	
-	const mota = document.querySelector(".mota")
-	const chitiet = document.querySelector(".chitiet")
-	if(mota){
-		mota.addEventListener("click", function(){
-			document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "none"
-			document.querySelector(".product-content-right-bottom-content-mota").style.display = "block"
-		})
-	}
-	if(chitiet){
-		chitiet.addEventListener("click", function(){
-			document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "block"
-			document.querySelector(".product-content-right-bottom-content-mota").style.display = "none"
-		})
-	}
-	const butTon = document.querySelector(".product-content-right-bottom-top")
-	if(butTon){
-		butTon.addEventListener("click", function(){
-			document.querySelector(".product-content-right-bottom-content-big").classList.toggle("activeB")
-		})
-	}
-</script>
+
+
+		const mota = document.querySelector(".mota")
+		const chitiet = document.querySelector(".chitiet")
+		if (mota) {
+			mota.addEventListener("click", function () {
+				document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "none"
+				document.querySelector(".product-content-right-bottom-content-mota").style.display = "block"
+			})
+		}
+		if (chitiet) {
+			chitiet.addEventListener("click", function () {
+				document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "block"
+				document.querySelector(".product-content-right-bottom-content-mota").style.display = "none"
+			})
+		}
+		const butTon = document.querySelector(".product-content-right-bottom-top")
+		if (butTon) {
+			butTon.addEventListener("click", function () {
+				document.querySelector(".product-content-right-bottom-content-big").classList.toggle("activeB")
+			})
+		}
+	</script>
 </body>
+
 </html>
